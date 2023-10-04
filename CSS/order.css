@@ -1,0 +1,231 @@
+   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Darker+Grotesque:wght@400;500&family=Inter:wght@300;400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Poppins:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap');
+
+
+
+section{
+     padding: 4rem 0px 1rem 0px;
+   }
+
+header{
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform .3s ease;
+    contain: size layout style;
+    padding: 0 20px;
+   }
+
+   header span{
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 5px;
+    cursor: pointer;
+   }
+
+   header p{
+    font-size: 14px;
+    color: #686b78;
+   }
+   header p i{
+    padding-left: 10px;
+    color: #fc8019;
+   }
+
+   header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+   }
+   header ul li {
+     cursor: pointer;
+   }
+    header ul li:hover span{
+        color: #fc8019;
+    }
+    header ul li:hover i{
+        color: #fc8019;
+    }
+    header ul .hov:hover path{
+        stroke: #fc8019 !important;
+    }
+    header ul .hov2:hover path{
+        stroke: #fc8019;
+    }
+    header ul .hov2:hover {
+        color: #fc8019;
+    }
+    header .location{
+        cursor: pointer;
+    }
+    header .location:hover {
+        color: #93959f;
+    }
+    header .location:hover span{
+        color: #fc8019;
+    }
+
+    header ul .hov2{
+        position: relative;
+    }
+    header ul .hov2 strong{
+        position: absolute;
+        left: 6px;
+        font-size: 12px;
+        bottom: 8px;
+    }
+
+   header ul li span{
+     font-size: 16px;
+     font-weight: 400;
+   }
+
+   header ul li i{
+      padding-right: 10px;
+      font-size: 15px;
+   }
+   header ul li svg{
+      padding-right: 10px;
+   }
+
+
+.head a{
+    text-decoration: none !important;
+    color: #bfbdbd;
+}
+
+
+.head span{
+    font-size: 11px;
+    color: #bfbdbd;
+}
+.head i{
+    font-size: 17px !important;
+}
+.head .active{
+    color: black;
+}
+.head span a:hover{
+    color: black;
+}
+.head span:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.dish .row{
+   padding: 1.5rem 0px 1.5rem 0px;
+   border-bottom: 0.5px solid #d3d3d3;
+   border-top: 0.5px solid #d3d3d3;
+}
+
+.dish h3{
+    font-size: 17.5px;
+}
+
+.dish span{
+    font-size: 14px;
+    color: #3e4152;
+    font-weight: 400;
+}
+
+.dish p{
+    margin-top: 14px;
+    line-height: 1.3;
+    color: rgba(40,44,63,.45);
+    letter-spacing: -.3px;
+    font-size: 1rem;
+}
+
+.dish img{
+    width: 136px;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.dish .flex{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.dish .add{
+    padding: 3px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0 3px 8px #e9e9eb;
+    border-radius: 4px;
+    color: #60b246;
+    justify-content: center;
+    right: 31px;
+    bottom: -3px;
+    width: 35%;
+    border: 1px solid #d4d5d9;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.dish .decrese{
+   padding-left: 5px;
+}
+
+.dish .value{
+   padding: 0px 15px 0px 15px;
+}
+
+.dish .increse{
+   padding-right: 5px;
+}
+
+
+
+@media (max-width:576px){
+    
+    header .hide{
+        display: none;
+    }
+
+    header p {
+        font-size: 8px;
+    }
+
+    .header{
+        font-size: 19px;
+    }
+    .owl-theme .owl-nav{
+        position: revert;
+    }
+
+    .head span {
+       font-size: 9px;
+       color: #bfbdbd;
+    }
+    .head i {
+      font-size: 12px !important;
+    }
+    .dish .add{
+        right: 8.5rem;
+        bottom: -11px;
+    }
+    .dish .flex{
+        justify-content: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+     header .hide{
+        display: none;
+    }
+
+}

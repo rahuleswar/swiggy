@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<title>Card in JS</title>
+</head>
+<body>
+
+
+    <header>
+       
+         <div class="row">
+          <div class="col-6 col-sm-6 col-md-6  col-lg-1 ">
+            <a href="https://www.swiggy.com/">   
+              <svg width="65" height="65" viewBox="0 0 24 24">
+               <path d="M10.04674,14.6931c-.6537,0-1.3077-.01213-1.961.00356a1.34217,1.34217,0,0,1-1.32992-.74721A11.18811,11.18811,0,0,1,5.2302,8.43165a6.27226,6.27226,0,0,1,1.84692-4.2846A6.71782,6.71782,0,0,1,9.77066,2.3954a6.608,6.608,0,0,1,3.64843-.243,6.831,6.831,0,0,1,5.34315,5.711.50726.50726,0,0,1-.34456.60247,4.95025,4.95025,0,0,1-1.57287.37382,14.83135,14.83135,0,0,1-3.148.04575c-.4199-.05212-.49612-.13556-.49938-.569-.00446-.59239-.0015-1.18484-.0021-1.77726-.0001-.09192-.00159-.18384-.00357-.27574a.297.297,0,0,0-.31381-.335c-.23448-.008-.33857.12462-.33935.34045-.00368,1.01116-.00232,2.02234-.0018,3.03351.00015.28725.18225.35756.427.35734.90906-.00081,1.81815-.00412,2.72717.00265a6.9447,6.9447,0,0,1,1.67041.16169,1.20325,1.20325,0,0,1,1.0117,1.63471,14.17062,14.17062,0,0,1-1.49447,3.87148,34.228,34.228,0,0,1-3.57641,5.25988c-.345.42932-.71124.84147-1.05994,1.26787-.15794.19314-.27715.18895-.431-.01052a43.866,43.866,0,0,1-3.42652-4.95565c-.12627-.22061-.22613-.45664-.3332-.68786-.1029-.22223-.01869-.36755.19318-.46728a2.59609,2.59609,0,0,1,.8005-.19481,7.70388,7.70388,0,0,1,2.348.0199c.44979.08231.52372.188.5232.639-.0004.34728-.0057.69461-.00056,1.0418.00326.22058.06579.43157.32967.42949.26288-.00208.32486-.214.3261-.4341.00407-.72517-.00119-1.4504.00336-2.17556.002-.31218-.19531-.37176-.44456-.37226q-1.04184-.0021-2.08369-.00049Z" fill="#f56c12"></path></svg>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6  col-lg-4 mt-4">
+               <p class="location"><span>Nesapakkam </span>Kaikankuppam, Nesapakkam,...<i class="bi bi-chevron-down"></i></p>
+          </div>   
+          
+          <div class="col-lg-7 mt-4 hide">
+              <nav> 
+               <ul>
+                  <li><i class="bi bi-search fs-5"></i><span>Search</span></li>
+                  <li class="fs-5 hov"><svg width="33" height="33" viewBox="0 0 24 24" fill="none"><path style="stroke: black;" d="m20.749 12 1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1h-2.199l-1.103-1.909a1.008 1.008 0 0 0-.607-.466.993.993 0 0 0-.759.1L12 3.251l-1.91-1.105a1 1 0 0 0-1.366.366L7.62 4.422H5.421a1 1 0 0 0-1 1v2.199l-1.91 1.104a.998.998 0 0 0-.365 1.367L3.25 12l-1.104 1.908a1.004 1.004 0 0 0 .364 1.367l1.91 1.104v2.199a1 1 0 0 0 1 1h2.2l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135l1.908-1.104 1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1v-2.199l1.91-1.104a1 1 0 0 0 .365-1.367L20.749 12zM9.499 6.99a1.5 1.5 0 1 1-.001 3.001 1.5 1.5 0 0 1 .001-3.001zm.3 9.6-1.6-1.199 6-8 1.6 1.199-6 8zm4.7.4a1.5 1.5 0 1 1 .001-3.001 1.5 1.5 0 0 1-.001 3.001z"></path></svg><span>Offers</span></li>
+                  <li><i class="bi bi-patch-question fs-5"></i><span>Help</span></li>
+                  <li><a href="signin.html"><i class="bi bi-person fs-5"></i><span>Sign In</span></a></li>
+                  <li class="fs-5 hov2"><svg width="30" height="30" viewBox="0 0 135 117" fill="none"><path d="M117.457 103H8.44827C6.07164 103 4.21923 100.94 4.47073 98.5767L14.1551 7.57671C14.3715 5.54291 16.0873 4 18.1326 4H105.835C107.849 4 109.548 5.49628 109.803 7.49329L121.424 98.4933C121.73 100.884 119.867 103 117.457 103Z" stroke="black" stroke-width="7"/></svg><strong>0</strong><span>Cart</span></li>
+               </ul>
+              </nav>   
+          </div>
+
+         </div>          
+    </header>
+
+    <section class="mt">
+       <div class="container">
+        <div class="header">
+            <span>Best offers for you</span>
+        </div>
+         <div class="owl-carousel owl-theme slide">
+             <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/f1647be4cd3a478ec2e3fb8c5ce9c6e7"></div>
+             <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/4a2baf883036401e1508a160e335086c"></div>
+             <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/2e54588fcfbfae32c57d1d4d3515f6e5"></div>
+             <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/882c5c15003aaea97773e16f4331ee79"></div>
+            <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/882c5c15003aaea97773e16f4331ee79"></img></div>
+            <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/60ec2584aa8d695fdcee446b7588886a"></img></div>
+            <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/3dfa4beb2c8f3fd97ef2ee8b80af2b60"></img></div>
+            <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/5f223b990347204c87db55dbf5ad55fb"></img></div>
+            <div class=""><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/6fa476c6612acbab5e2ccac960b465e2"></img></div>
+
+         </div> 
+       </div>
+    </section> 
+
+    <section>
+       
+         <div class="container">
+          <div class="header">
+            <span>What's on your mind?</span>
+          </div>
+             <div class="owl-carousel owl-theme slide1">
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029856/PC_Creative%20refresh/3D_bau/banners_new/Pizza.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/North_Indian_4.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Burger.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029850/PC_Creative%20refresh/3D_bau/banners_new/Dosa.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Parotta.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Ice_Creams.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Ice_Creams.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667626/PC_Creative%20refresh/South_Indian_4.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029859/PC_Creative%20refresh/3D_bau/banners_new/Shawarma.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Momos.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Rolls.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Kebabs.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Cakes.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029844/PC_Creative%20refresh/3D_bau/banners_new/Appam.png"></div>
+                <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029854/PC_Creative%20refresh/3D_bau/banners_new/Pasta.png"></div>
+             </div>
+          </div>
+
+    </section>
+
+
+
+    <section class="mt">
+       <div class="container">
+        <div class="header">
+            <span>Top restaurant chains in Chennai</span>
+        </div>
+         <div class="owl-carousel owl-theme slide2">
+             
+         </div> 
+       </div>
+    </section> 
+
+
+    <section>
+    	  <div class="container">
+            <div class="header">
+    		    <h1>Burger</h1>
+    		    <p>Satisfy your cravings with these fresh and flavoursome burgers.</p>
+    	      </div>
+            <div class="items">
+            </div>
+          </div>
+    </section>
+
+
+
+      <script type="text/javascript" src="Scripts/main.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+      <script type="text/javascript">
+
+
+         
+var owl = $('.slide');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },            
+        960:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+
+
+         
+var owl = $('.slide1');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:4
+        },            
+        960:{
+            items:6
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});              
+
+var owl = $('.slide2');
+owl.owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:4
+        },            
+        960:{
+            items:6
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+}); 
+
+      </script>
+
+</body>
+</html>

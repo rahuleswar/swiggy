@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Darker+Grotesque:wght@400;500&family=Inter:wght@300;400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Poppins:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap');
+  a{
+    text-decoration: none !important;
+    color: black !important;
+  } 
+
+   header{
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform .3s ease;
+    contain: size layout style;
+    padding: 0 20px;
+   }
+
+   header span{
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 5px;
+    cursor: pointer;
+   }
+
+   header p{
+    font-size: 14px;
+    color: #686b78;
+   }
+   header p i{
+    padding-left: 10px;
+    color: #fc8019;
+   }
+
+   header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+   }
+   header ul li {
+     cursor: pointer;
+   }
+    header ul li:hover span{
+        color: #fc8019;
+    }
+    header ul li:hover i{
+        color: #fc8019;
+    }
+    header ul .hov:hover path{
+        stroke: #fc8019 !important;
+    }
+    header ul .hov2:hover path{
+        stroke: #fc8019;
+    }
+    header ul .hov2:hover {
+        color: #fc8019;
+    }
+    header .location{
+        cursor: pointer;
+    }
+    header .location:hover {
+        color: #93959f;
+    }
+    header .location:hover span{
+        color: #fc8019;
+    }
+
+    header ul .hov2{
+        position: relative;
+    }
+    header ul .hov2 strong{
+        position: absolute;
+        left: 6px;
+        font-size: 12px;
+        bottom: 8px;
+    }
+
+   header ul li span{
+     font-size: 16px;
+     font-weight: 400;
+   }
+
+   header ul li i{
+      padding-right: 10px;
+      font-size: 15px;
+   }
+   header ul li svg{
+      padding-right: 10px;
+   }
+
+.mt{
+    margin-top: 6rem;
+}
+
+
+
+
+     
+     .header{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 24px;
+        margin-top: 25px;
+        margin-bottom: 21px;
+        font-weight: 800;
+        line-height: 28px;
+        letter-spacing: -0.4px;
+        color: rgba(2, 6, 12, 0.92);
+     }
+     
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: none !important;
+        color: black !important;
+        text-decoration: none;
+    }
+
+     .owl-theme .owl-dots{
+        display: none;
+     }
+
+     .owl-theme .owl-nav {
+        position: absolute;
+        top: -4rem;
+        right: 0px;
+
+     }
+
+    .owl-theme .owl-nav button span{
+        padding: 3px 12px 3px 12px;
+        font-size: 18px;
+        border-radius: 100% !important;
+        background: rgb(226, 226, 231) !important;
+     }
+  
+
+     .header h1{
+        font-size: 40px;
+        font-weight: 600;
+     }
+     .header p{
+        font-size: 18px;
+        opacity: .9;
+        margin-top: 8px;
+        max-width: 800px;
+     }
+
+    .cards{
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition: 0.2s;
+    } 
+    .cards:hover{
+    	transform: scale(0.9);
+    }
+
+   
+    .cards img{
+      width: 100%;
+      height: 9rem;
+      object-fit: cover;
+      border-style: none;
+      border-radius: 15px;
+    }
+
+    .cards .content{
+    	margin-left: 12px;
+    }
+
+    .cards h1{
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 19px;
+        letter-spacing: 2px;
+        font-weight: 700;
+     }
+    .cards .bi{
+     	    background-color: green;
+            color: white;
+            border-radius: 50px;
+            padding: 0px 5px 5px 5px;
+            margin-right: 5px;
+            font-size: 12px;
+     }
+ 
+    .cards strong{
+        font-family: 'Darker Grotesque', sans-serif;
+        margin-bottom: 10px;
+     }
+
+    .cards p{
+        font-family: 'Darker Grotesque', sans-serif;
+        color: rgba(40,44,63,.45);
+        margin-bottom: 0px ;
+        font-weight: 600;
+        letter-spacing: 1px;
+     }
+
+
+
+@media (max-width:576px){
+    
+    header .hide{
+        display: none;
+    }
+
+    header p {
+        font-size: 8px;
+    }
+
+    .header{
+        font-size: 19px;
+    }
+    .owl-theme .owl-nav{
+        position: revert;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+     header .hide{
+        display: none;
+    }
+
+}
